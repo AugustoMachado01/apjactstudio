@@ -8,22 +8,21 @@ export default function Header() {
     <nav>
       <div className="logo">
         <img src={Image} alt="Logo" />
-        {/* <h1>GRAPHER SHOT.</h1> */}
       </div>
       <ul>
         <li>
-          <Link to="about" smooth={true} duration={500}>
-            Portfolio
+          <Link to="home" smooth={true} duration={500}>
+            Início
           </Link>
         </li>
         <li>
-          <Link to="portfolio" smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={500}>
             Sobre Nós
           </Link>
         </li>
         <li>
           <Link to="testimonials" smooth={true} duration={500}>
-            Testemunhas
+            Portfolio
           </Link>
         </li>
         <li>

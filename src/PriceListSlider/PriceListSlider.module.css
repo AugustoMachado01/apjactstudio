@@ -1,0 +1,52 @@
+.price_slider_container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.price_title {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.price_card {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.price_type {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.price_amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.schedule_button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.schedule_button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.slick_slide {
+  display: flex;
+  justify-content: center;
+}

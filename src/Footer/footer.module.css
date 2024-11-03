@@ -1,0 +1,27 @@
+.footer_container {
+  width: 100%;
+  background-color: #141f24;
+  padding: 20px;
+  text-align: center;
+  color: #d1d1d1;
+}
+
+.footer_brand h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer_brand p {
+  font-size: 14px;
+}
+
+.footer_social a {
+  color: #d1d1d1;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer_social a:hover {
+  color: #ffffff;
+}

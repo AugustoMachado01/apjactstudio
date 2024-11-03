@@ -1,0 +1,70 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+.portfolio {
+  padding: 2rem;
+}
+
+/* Filtro de categorias */
+.category-filter {
+  margin-bottom: 1rem;
+}
+
+.category-button {
+  margin: 0 0.5rem;
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #333;
+}
+
+/* Galeria e botão "See More" */
+.gallery {
+  margin-top: 2rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.image-item img:hover {
+  transform: scale(1.05);
+}
+
+.see-more {
+  margin-top: 2rem;
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.see-more:hover {
+  background-color: #555;
+}

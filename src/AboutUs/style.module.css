@@ -6,7 +6,7 @@
   padding: 2rem;
   background-color: #111;
   color: #fff;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -95,6 +95,7 @@
 .slide {
   width: 293px;
   height: 358px;
+  image-rendering: -webkit-optimize-contrast;
   margin-right: 26px;
   transition: transform 0.5s ease;
 }

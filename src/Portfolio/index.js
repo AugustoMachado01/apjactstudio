@@ -1,36 +1,49 @@
-import Facebook from "../icons/facebook.png";
-import Instagram from "../icons/linkedin.png";
-import Twitter from "../icons/twitter.png";
-import Google from "../assets/noah-buscher-1-kPytLsVkY-unsplash-PhotoRoom.png";
+import React, { useState } from "react";
+import CategoryFilter from "./components/CategoryFilter";
+import Gallery from "./components/Gallery ";
+import SeeMoreButton from "./components/SeeMoreButton";
+import Image1 from "./components/assets/Rectangle 15.png";
+import styles from "./components/styles/Portfolio.module.css";
 
-import styles from "./style.module.css";
+const Portfolio = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [visibleImages, setVisibleImages] = useState(6);
 
-export default function Portfolio() {
-  return (
-    <section className={styles.hero}>
-      <div className={styles.title_container}>
-        <h1>APJACSTUDIO</h1>
-        <p>Pellentesque Mauris A Lobortis...</p>
-      </div>
-      <div className={styles.image_container}>
-        <a href="#" className={styles.cta_button}>
-          Order Now
-        </a>
-        <img src={Google} alt="Photographer Image" />
-      </div>
-      <div className={styles.social_icons_container}>
-        <span className={styles.line}></span>
-        <a href="#" className={styles.icon}>
-          <img src={Facebook} alt="" />
-        </a>
-        <a href="#" className={styles.icon}>
-          <img src={Twitter} alt="" />
-        </a>
-        <a href="#" className={styles.icon}>
-          <img src={Instagram} alt="" />
-        </a>
-        <span className={styles.line}></span>
-      </div>
-    </section>
+  const images = [
+    // Coloque os links e categorias das suas imagens
+    { src: Image1, category: "Wedding" },
+    { src: Image1, category: "Product" },
+    { src: Image1, category: "Food" },
+    { src: Image1, category: "Fashion" },
+    { src: Image1, category: "Wedding" },
+    { src: Image1, category: "Food" },
+    { src: Image1, category: "Product" },
+    { src: Image1, category: "Fashion" },
+    { src: Image1, category: "Wedding" },
+    // Continue com mais imagens conforme necessário
+  ];
+
+  const filteredImages = images.filter(
+    (image) => selectedCategory === "All" || image.category === selectedCategory
   );
-}
+
+  const handleSeeMore = () => {
+    setVisibleImages((prev) => prev + 6);
+  };
+
+  return (
+    <div className={styles.portfolio}>
+      <h2>PORTFOLIO</h2>
+      <CategoryFilter
+        selectedCategory={selectedCategory}
+        onSelectCategory={setSelectedCategory}
+      />
+      <Gallery images={filteredImages.slice(0, visibleImages)} />
+      {visibleImages < filteredImages.length && (
+        <SeeMoreButton onClick={handleSeeMore} />
+      )}
+    </div>
+  );
+};
+
+export default Portfolio;

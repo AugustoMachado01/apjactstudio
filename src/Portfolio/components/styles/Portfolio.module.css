@@ -1,0 +1,18 @@
+.portfolio {
+  padding: 2rem;
+
+  background-color: #111;
+}
+
+.portfolio h2 {
+  text-align: right;
+  font-size: 70px;
+  font-weight: 400;
+  opacity: 1;
+  letter-spacing: 0;
+  line-height: normal;
+  height: 85px;
+  font-family: "Cormorant", sans-serif;
+  color: #ffffff;
+  font: 100;
+}

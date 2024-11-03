@@ -1,12 +1,29 @@
 import React, { useState } from "react";
 import styles from "./style.module.css";
 
-import Image1 from "../assets/img1.png";
-import Image2 from "../assets/img2.png";
-import Image3 from "../assets/img3.png";
-import Image4 from "../assets/img4.png";
-import Image5 from "../assets/img5.png";
-import Image6 from "../assets/img5.png";
+// import Image1 from "../assets/img1.png";
+// import Image2 from "../assets/img2.png";
+// import Image3 from "../assets/img3.png";
+// import Image4 from "../assets/img4.png";
+// import Image5 from "../assets/img5.png";
+// import Image6 from "../assets/img5.png";
+// import Image7 from "../assets/capalanca.jpeg";
+// import Image8 from "../assets/festa.jpg";
+// import Image9 from "../assets/suzana.jpg";
+// import Image10 from "../assets/linkedin.jpg";
+// import Image11 from "../assets/comercial.jpg";
+
+import Image1 from "../assets/capalanca.jpeg";
+import Image2 from "../assets/festa.jpg";
+import Image3 from "../assets/suzana.jpg";
+import Image4 from "../assets/linkedin.jpg";
+import Image5 from "../assets/comercial.jpg";
+import Image6 from "../assets/marcia.jpg";
+import Image7 from "../assets/festa1.jpg";
+import Image8 from "../assets/festa2.jpg";
+import Image9 from "../assets/festa3.jpg";
+import Image10 from "../assets/kid.jpg";
+import Image11 from "../assets/marcia1.jpg";
 
 const AboutUs = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -17,7 +34,12 @@ const AboutUs = () => {
     { id: 3, src: Image3, alt: "Foto 3" },
     { id: 4, src: Image4, alt: "Foto 4" },
     { id: 5, src: Image5, alt: "Foto 5" },
-    { id: 6, src: Image6, alt: "Foto 6" },
+    { id: 6, src: Image6, alt: "Foto 5" },
+    { id: 7, src: Image7, alt: "Foto 5" },
+    { id: 8, src: Image8, alt: "Foto 5" },
+    { id: 9, src: Image9, alt: "Foto 5" },
+    { id: 10, src: Image10, alt: "Foto 5" },
+    { id: 11, src: Image11, alt: "Foto 5" },
   ];
 
   const numVisibleSlides = 5;
@@ -38,29 +60,33 @@ const AboutUs = () => {
   };
 
   return (
-    <div className={styles.aboutSection}>
+    <div id="about" className={styles.aboutSection}>
       <div className={styles.aboutText}>
-        <h2>ABOUT US</h2>
+        <h2>SOBRE NÓS</h2>
         <p>
-          Trincidunt Sagittis Mollis Nec Suspendisse Sed Felis Massa Urna Nec.
-          Uma Quisque Blandit Turpis Ultrices Arcu Ut Sed. Ultricies Diam Est
-          Aliquet Porta Fermentum Molestie Morbi Libero. Ultrices Sit In Elit
-          Eget Nullam Sem. Uma Velit Imperdiet Habitand In.
+          Somos uma empresa de fotografia e vídeo que oferece uma variedade de
+          serviços relacionados à captura, edição de imagens e vídeos. Isso pode
+          incluir: Eventos, Cobertura de casamentos, aniversários, festas
+          corporativas e outros eventos sociais
         </p>
+        {/* <p>
+          Somos uma empresa de fotografia e vídeos que oferece uma variedade de
+          serviços relacionados à captura, ediçãode imagense vídeos
+        </p> */}
       </div>
 
       <div className={styles.stats}>
         <div className={styles.statItem}>
           <span>+10</span>
-          <p>Years Experience</p>
+          <p>Anos de experiência</p>
         </div>
         <div className={styles.statItem}>
           <span>+450</span>
-          <p>Customers</p>
+          <p>Clientes</p>
         </div>
         <div className={styles.statItem}>
           <span>+15K</span>
-          <p>Portfolio Photos</p>
+          <p>Portifolio fotos</p>
         </div>
       </div>
 

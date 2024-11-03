@@ -1,0 +1,15 @@
+.seeMoreButton {
+  margin-top: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.1rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.seeMoreButton:hover {
+  background-color: #fff;
+  color: #111;
+}
