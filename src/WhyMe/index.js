@@ -1,9 +1,8 @@
-// WhyMe.js
 import styles from "./WhyMe.module.css";
 
 function WhyMe() {
   return (
-    <div className={styles.whyMeContainer}>
+    <div className={styles.whyMeContainer} id="testemonials">
       <h2 className={styles.title}>Por Que Escolher a APJACSTUDIO</h2>
       <p className={styles.description}>
         Profissionais dedicados a capturar seus momentos mais especiais com

@@ -16,3 +16,49 @@
   color: #ffffff;
   font: 100;
 }
+
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+  .portfolio {
+    padding: 1.5rem; /* Reduz o padding para telas menores */
+  }
+
+  .portfolio h2 {
+    font-size: 60px; /* Reduz o tamanho da fonte */
+    height: 75px; /* Ajusta a altura */
+  }
+}
+
+@media (max-width: 992px) {
+  .portfolio {
+    padding: 1rem; /* Reduz o padding ainda mais */
+  }
+
+  .portfolio h2 {
+    font-size: 50px; /* Reduz ainda mais o tamanho da fonte */
+    height: 65px; /* Ajusta a altura */
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 0.5rem; /* Menos padding em telas pequenas */
+  }
+
+  .portfolio h2 {
+    font-size: 40px; /* Tamanho da fonte adaptado para telas menores */
+    height: 55px; /* Ajusta a altura */
+    text-align: center; /* Centraliza o texto em telas pequenas */
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio {
+    padding: 0.5rem; /* Mantém o padding para telas pequenas */
+  }
+
+  .portfolio h2 {
+    font-size: 30px; /* Tamanho da fonte ainda menor para dispositivos móveis */
+    height: auto; /* Remove altura fixa para permitir adaptação */
+  }
+}

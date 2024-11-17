@@ -4,7 +4,7 @@ import styles from "./styles/SeeMoreButton.module.css";
 const SeeMoreButton = ({ onClick }) => {
   return (
     <div className={styles.seeMoreButton} onClick={onClick}>
-      See More →
+      veja mais →
     </div>
   );
 };

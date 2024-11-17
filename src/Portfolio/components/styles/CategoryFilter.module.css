@@ -20,3 +20,23 @@
   font: bold;
   line-height: 160%;
 }
+
+@media (max-width: 768px) {
+  .categories {
+    justify-content: center; /* Centraliza em telas menores */
+  }
+
+  .categories span {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .categories {
+    gap: 0.5rem; /* Reduz o espaço entre os itens em telas muito pequenas */
+  }
+
+  .categories span {
+    font-size: 0.8rem; /* Mais redução para telas pequenas */
+  }
+}

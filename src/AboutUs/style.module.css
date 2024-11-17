@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 .aboutSection {
   display: flex;
   flex-direction: column;
@@ -15,32 +16,21 @@
   flex-direction: column;
   width: 50%;
   margin-bottom: 2rem;
-  position: relative; /* Para permitir posicionamento absoluto */
+  position: relative;
 }
 
 .aboutText h2 {
   font-size: 3rem;
   line-height: 1;
   margin-bottom: 0.5rem;
-  position: relative;
-}
-
-.aboutText::after {
-  content: "";
-  width: 2px;
-  height: 100px;
-  background-color: #fff;
-  position: absolute;
-  top: 100%; /* Desce para abaixo do texto */
-  left: 0;
-  margin-top: 1rem;
 }
 
 .aboutText p {
   margin-top: 1.5rem;
   font-size: 1.2rem;
-  line-height: 1.8;
+  line-height: 1;
   max-width: 90%;
+  text-align: justify;
 }
 
 .stats {
@@ -66,15 +56,18 @@
   font-size: 1.1rem;
 }
 
-.statItem:not(:last-child)::after {
-  content: "";
-  height: 80px;
-  width: 1px;
-  background-color: #fff;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+/* Exibe a borda apenas em telas maiores */
+@media (min-width: 769px) {
+  .statItem:not(:last-child)::after {
+    content: "";
+    height: 80px;
+    width: 1px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .slider {
@@ -125,4 +118,121 @@
 
 .next {
   right: 0;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 1024px) {
+  .aboutText {
+    width: 70%;
+  }
+
+  .aboutText h2 {
+    font-size: 2.5rem;
+  }
+
+  .aboutText p {
+    font-size: 1.1rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statItem {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutText {
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutText h2 {
+    font-size: 2rem;
+  }
+
+  .aboutText p {
+    font-size: 1rem;
+  }
+
+  .slide {
+    width: 200px;
+    height: 250px;
+    margin-right: 16px;
+  }
+
+  .prev,
+  .next {
+    padding: 0.75rem;
+  }
+
+  .stats {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutSection {
+    padding: 1rem;
+  }
+
+  .aboutText h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutText p {
+    font-size: 0.9rem;
+  }
+
+  .statItem span {
+    font-size: 1.8rem;
+  }
+
+  .statItem p {
+    font-size: 1rem;
+  }
+
+  .slider {
+    flex-direction: column;
+  }
+
+  .slide {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .prev,
+  .next {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Ajuste da exibição do slider para telas menores */
+@media (max-width: 768px) {
+  .slides {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slide {
+    min-width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutText p {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1;
+    max-width: 90%;
+    text-align: center;
+  }
+  .slide {
+    min-width: 50%;
+  }
 }

@@ -7,7 +7,6 @@ import Testimonials from "./Testimonials";
 import WhyMe from "./WhyMe";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import PriceListSlider from "./PriceListSlider";
 import Newsletter from "./Newsletter";
 import Footer from "./Footer";
 

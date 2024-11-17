@@ -6,9 +6,10 @@ const CategoryFilter = ({ selectedCategory, onSelectCategory }) => {
   const categories = [
     { label: "Todos", value: "All" },
     { label: "Casamento", value: "Wedding" },
-    { label: "Produto", value: "Product" },
-    { label: "Comida", value: "Food" },
     { label: "Moda", value: "Fashion" },
+    { label: "Institucionais", value: "institutional" },
+    { label: "Comerciais", value: "commercials" },
+    { label: "Corporativas", value: "corporate" },
   ];
 
   return (

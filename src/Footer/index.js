@@ -1,26 +1,31 @@
 import React from "react";
 import styles from "./footer.module.css";
 
-import { FaFacebook, FaTwitter, FaGoogle, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaWhatsapp,
+  FaInstagram,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className={styles.footer_container}>
       <div className={styles.footer_brand}>
-        <h2>GRAPHER SHOT.</h2>
-        <p>&copy; Copyright 2022 | Photographer</p>
+        <h2>APJAC STUDIO.</h2>
+        <p>&copy; Direitos autorais 2024 | Ajacstudio</p>
       </div>
       <div className={styles.footer_social}>
-        <a href="#">
-          <FaTwitter />
+        <a href="https://api.whatsapp.com/send?phone=938493359">
+          <FaWhatsapp />
         </a>
-        <a href="#">
-          <FaGoogle />
+        <a href="https://www.instagram.com/apjac_studio/">
+          <FaInstagram />
         </a>
-        <a href="#">
+        <a href="https://www.facebook.com/profile.php?id=61558179821691">
           <FaFacebook />
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/company/105419818/admin/dashboard/">
           <FaLinkedin />
         </a>
       </div>
