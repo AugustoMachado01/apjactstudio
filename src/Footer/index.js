@@ -16,7 +16,7 @@ const Footer = () => {
         <p>&copy; Direitos autorais 2024 | Ajacstudio</p>
       </div>
       <div className={styles.footer_social}>
-        <a href="https://api.whatsapp.com/send?phone=938493359">
+        <a href="https://api.whatsapp.com/send?phone=922674522">
           <FaWhatsapp />
         </a>
         <a href="https://www.instagram.com/apjac_studio/">
